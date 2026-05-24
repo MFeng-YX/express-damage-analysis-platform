@@ -1,0 +1,5 @@
+api:
+  title: 快件破损指标分析与异常追踪系统 API
+  prefix: ${API_PREFIX}
+  host: ${API_HOST}
+  port: ${API_PORT}

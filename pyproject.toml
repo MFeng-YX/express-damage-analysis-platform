@@ -1,0 +1,5 @@
+[project]
+name = "express-damage-analysis-platform"
+version = "0.1.0"
+description = "A lightweight data analysis platform for express parcel damage analysis."
+requires-python = ">=3.10"
