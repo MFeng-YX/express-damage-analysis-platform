@@ -39,10 +39,60 @@ class ConfigError(AppError):
 
 
 class DatabaseError(AppError):
-    """数据库错误
+    """数据库连接错误
 
     Args:
         AppError (_type_): 项目异常基础类
+    """
+
+    pass
+
+
+class ExcelReadError(AppError):
+    """Excel文件读取错误
+
+    Args:
+        AppError (_type_): 项目异常基类
+    """
+
+    pass
+
+
+class FieldMappingError(AppError):
+    """字段映射错误
+
+    Args:
+        AppError (_type_): 项目异常基类
+    """
+
+    pass
+
+
+class ValidationError(AppError):
+    """数据验证错误
+
+    Args:
+        AppError (_type_): 项目异常基类
+    """
+
+    pass
+
+
+class ETLError(AppError):
+    """数据ETL流程错误
+
+    Args:
+        AppError (_type_): 项目异常基类
+    """
+
+    pass
+
+
+class APIServiceError(AppError):
+    """API服务错误
+
+    Args:
+        AppError (_type_): 项目异常基类
     """
 
     pass
