@@ -1,0 +1,110 @@
+outbound_damage:
+  description: 出港破损数据字段映射配置
+
+  defaults:
+    dtype: string
+    required: true
+    nullable: false
+    default: null
+
+  fields:
+    - source_name: 日期
+      target_name: date
+
+    - source_name: 运单号
+      target_name: tracking_number
+
+    - source_name: 创单中心编码
+      target_name: originating_center_code
+
+    - source_name: 创单中心名称
+      target_name: originating_center_name
+
+    - source_name: 上报中心编码
+      target_name: destination_center_code
+
+    - source_name: 上报中心名称
+      target_name: destination_center_name
+
+    - source_name: 破损程度
+      target_name: damage_degree
+
+    - source_name: 车签破损票数类型
+      target_name: car_damage_ticket_type
+
+    - source_name: 车签号
+      target_name: car_label_number
+
+    - source_name: 是否装包
+      target_name: is_packaged
+
+    - source_name: 客户编码
+      target_name: client_code
+
+    - source_name: 客户名称
+      target_name: client_name
+
+    - source_name: 产品类型
+      target_name: product_type
+
+    - source_name: 是否换包装
+      target_name: is_packaging_changed
+
+outbound_amount:
+  description: 出港下车量的字段映射配置
+
+  defaults:
+    dtype: string
+    required: true
+    nullable: false
+    default: null
+
+  fields:
+    - source_name: 日期
+      target_name: date
+
+    - source_name: 中心编码
+      target_name: originating_center_code
+
+    - source_name: 中心名称
+      target_name: originating_center_name
+
+    - source_name: 目的中心编码
+      target_name: destination_center_code
+
+    - source_name: 目的中心名称
+      target_name: destination_center_name
+
+    - source_name: 车签号
+      target_name: car_license
+
+    - source_name: 下车票数
+      target_name: express_amount
+
+inbound_amount:
+  description: 进港下车量数据的字段映射配置
+
+  defaults:
+    dtype: string
+    required: true
+    nullable: false
+    default: null
+
+  fields:
+    - source_name: 数据日期
+      target_name: date
+
+    - source_name: 中心code
+      target_name: center_code
+
+    - source_name: 中心名称
+      target_naem: center_name
+
+    - source_name: 分公司code
+      target_name: branch_office_code
+
+    - source_name: 分公司名称
+      target_name: branch_office_name
+
+    - source_name: 派件量/操作量
+      target_name: express_amount
